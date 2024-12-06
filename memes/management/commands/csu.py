@@ -9,9 +9,6 @@ class Command(BaseCommand):
         user = User.objects.create(
             email="admin1@mail.ru",
             name="Admin",
-            is_superuser=True,
-            is_staff=True,
-            is_active=True,
         )
 
         user.set_password('123qwe')
